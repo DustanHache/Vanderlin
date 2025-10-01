@@ -44,7 +44,6 @@
 /datum/antagonist/bandit/proc/finalize_bandit()
 	owner.current.playsound_local(get_turf(owner.current), 'sound/music/traitor.ogg', 80, FALSE, pressure_affected = FALSE)
 	var/mob/living/carbon/human/H = owner.current
-	H.set_patron(/datum/patron/inhumen/matthios)
 
 /datum/antagonist/bandit/greet()
 	to_chat(owner.current, span_alertsyndie("I am a BANDIT!"))
