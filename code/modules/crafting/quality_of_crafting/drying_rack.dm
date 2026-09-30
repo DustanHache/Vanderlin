@@ -242,12 +242,29 @@
 		/obj/item/reagent_containers/food/snacks/sugar = 1,
 	)
 	reagent_requirements = list(
-		/datum/reagent/blood/tiefling = 11
+		/datum/reagent/blood/tiefling = 11 
 	)
 	attacked_atom = /obj/machinery/tanningrack
 
 	craft_time = 2.5 SECONDS
 	crafting_message = "starts mixing the blood"
+	craftdiff = 1
+
+/datum/repeatable_crafting_recipe/Crystalsalt
+	name = "Sea salt"
+	output = /obj/item/reagent_containers/powder/salt
+	output_amount = 1
+	starting_atom = /obj/item/natural/stone
+	requirements = list(
+		/obj/item/reagent_containers/food/snacks/sugar = 1,
+	)
+	reagent_requirements = list(
+		/datum/reagent/consumable/sodiumchloride = 10 
+	)
+	attacked_atom = /obj/machinery/tanningrack
+
+	craft_time = 2.5 SECONDS
+	crafting_message = "crystalizes the salt around the stone"
 	craftdiff = 1
 
 /datum/repeatable_crafting_recipe/capillusfiber
