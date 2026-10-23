@@ -23,7 +23,12 @@
 			quality_multiplier = 1.45
 
 	melt_amount = round(initial(melt_amount) * quality_multiplier)
+/obj/item/ore/on_consume(mob/living/eater)
+	. = ..()
+	eater.extra_mob_weight += get_carry_weight(eater)
 
+/obj/item/ore/on_anti_consume(mob/living/eater)
+	eater.extra_mob_weight -= get_carry_weight(eater
 /obj/item/ore/gold
 	name = "raw gold"
 	icon_state = "oregold1"
