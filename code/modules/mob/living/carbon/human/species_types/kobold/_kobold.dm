@@ -8,8 +8,14 @@
 #define DIET_KOBOLD list(\
 	/obj/item/natural/clod,\
 	/obj/item/natural/stone,\
+	/obj/item/natural/clay,\
 	/obj/item/coin,\
 	/obj/item/gem,\
+	/obj/item/ore,\
+	/obj/item/alch/silverdust,\
+	/obj/item/alch/coaldust,\
+	/obj/item/alch/golddust,\
+	/obj/item/alch/irondust,\
 )
 
 #define DIET_TURF_KOBOLD list(\
